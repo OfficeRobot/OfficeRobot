@@ -25,6 +25,8 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         try:
             params = self.path.split('&')
+            if params.__len__() <=1:
+              return
             actionname = ''
             directionname = ''
             angle = 0
@@ -76,7 +78,7 @@ def run():
 
     #ip and port of servr
     #by default http server port is 80
-    server_address = ('127.0.0.1', 101)
+    server_address = ('10.14.139.201', 80)
     httpd = HTTPServer(server_address, RobotHTTPRequestHandler)
     print('http server is running...')
     httpd.serve_forever()
