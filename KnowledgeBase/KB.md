@@ -9,6 +9,14 @@ Visit the following [link](https://help.github.com/articles/github-flavored-mark
 
 [MarkdownPad2](http://markdownpad.com/)
 
+About Raspberry Pi
+------------------------------------------------------------------
+
+There's a pluralsight Raspberry Pi for Developers Course:
+[Pluralsight Course](http://pluralsight.com/training/courses/TableOfContents?courseName=raspberry-pi-for-developers)
+
+Python fundamentals pluralsight course: [Python fundamentals](http://pluralsight.com/training/courses/TableOfContents?courseName=python-fundamentals)
+
 Adafruit 16 Channel Servo Driver with Raspberry Pi
 ------------------------------------------------------------------
 
