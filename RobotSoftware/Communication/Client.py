@@ -1,11 +1,29 @@
 #!/usr/bin/python           
 
-import socket               # Import socket module
+import httplib
+import sys
 
-s = socket.socket()         # Create a socket object
-host = socket.gethostname() # Get local machine name
-port = 90                   # Reserve a port for your service.
+#get http server ip
+http_server = "127.0.0.1:101"
+#create a connection
+conn = httplib.HTTPConnection(http_server)
 
-s.connect((host, port))
-print s.recv(1024)
-s.close   
+while 1:
+    cmd = raw_input('input command (ex. GET index.html): ')
+    cmd = cmd.split()
+
+    if cmd[0] == 'exit': #tipe exit to end it
+        break
+
+    #request command to server
+    conn.request(cmd[0], cmd[1])
+
+    #get response from server
+    rsp = conn.getresponse()
+
+    #print server response and data
+    print(rsp.status, rsp.reason)
+    data_received = rsp.read()
+    print(data_received)
+
+conn.close()
