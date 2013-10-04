@@ -54,6 +54,4 @@ def setRotServo(channel, angle):
   pulse= minPulse + (angle / (180/angleRange))
   setServoPulse(channel, 0, pulse)
 
-setRotServo(0, float(sys.argv[1]))
-
 
