@@ -1,7 +1,7 @@
 __author__ = 'gmeszaros'
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from threading import Timer
-#import Servo_Control
+import Servo_Control
 
 
 def enum(**enums):
@@ -13,8 +13,8 @@ Actions = enum(Move='move', Turn='turn')
 
 #Called by a timer after a timeperiod stops the continous servo
 def stopContServo():
-    print("Stop the continous servo")
-    #Servo_Control.setContServo(1, 0, 0)
+    #print("Stop the continous servo")
+    Servo_Control.setContServo(1, 0, 0)
 
 
 #Create custom HTTPRequestHandler class
@@ -50,7 +50,7 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
             else:
                 if action == Actions.Move:
                     if direction == Directions.Forward:
-                        #Servo_Control.setContServo(1, 0, speed)
+                        Servo_Control.setContServo(1, 0, speed)
                         r = Timer(0.3, stopContServo, ())
                         r.start()
                         print("Moving forward with speed %s" % str(speed))
