@@ -26,7 +26,7 @@
       <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="50" selection-start="514" selection-end="514" vertical-scroll-proportion="0.20395201" vertical-offset="0" max-vertical-offset="1417">
+            <state line="19" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.22794637" vertical-offset="0" max-vertical-offset="1417">
               <folding>
                 <element signature="e#41#102#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="RequestHandler.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RequestHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="36" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+            <state line="16" column="13" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
               <folding>
                 <element signature="e#25#86#0" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/RequestHandler.py" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/RequestHandler.py" />
       </list>
     </option>
   </component>
@@ -348,17 +348,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Adafruit_I2C.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="331" selection-end="331" vertical-scroll-proportion="0.45945945" vertical-offset="0" max-vertical-offset="2516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
@@ -366,9 +359,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Adafruit_I2C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.023994355" vertical-offset="0" max-vertical-offset="2516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RequestHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+        <state line="16" column="13" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <folding>
             <element signature="e#25#86#0" expanded="true" />
           </folding>
@@ -377,7 +377,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="514" selection-end="514" vertical-scroll-proportion="0.20395201" vertical-offset="0" max-vertical-offset="1417">
+        <state line="19" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.22794637" vertical-offset="0" max-vertical-offset="1417">
           <folding>
             <element signature="e#41#102#0" expanded="true" />
           </folding>
