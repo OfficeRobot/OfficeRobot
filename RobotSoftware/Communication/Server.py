@@ -15,7 +15,7 @@ def run():
     ip = socket.gethostbyname(socket.gethostname())
     server_address = (ip, 80)
     httpd = HTTPServer(server_address, RobotHTTPRequestHandler)
-    print('http server is running...')
+    print('http server is running on %s ...' % ip)
     httpd.serve_forever()
 
 if __name__ == '__main__':
