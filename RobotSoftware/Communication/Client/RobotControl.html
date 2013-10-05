@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Control Dealogic Robot</title>
+    <link rel="stylesheet" type="text/css" href="Content/Styles/angular-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/Styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/Styles/bootstrap-glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="Content/Styles/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/Styles/Site.css">
+
+    <script type="text/javascript" src="Content/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="Content/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Content/Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="Content/Scripts/moment.min.js"></script>
+
+    <script type="text/javascript" src="Content/Scripts/Control.js"></script>
+    <script type="text/javascript" src="Content/Scripts/Services.js"></script>
+</head>
+<body ng-app="robot" ng-controller="MainCtrl" ng-init="init()">
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Web Control for Dealogic Robot</h1>
+    </div>
+    <div class="control-container">
+        <div class="alert alert-info" ng-show="serverOnline" >The robot is online! The address is {{serverAddress}}</div>
+        <div class="alert alert-danger" ng-hide="serverOnline">The robot is offline!</div>
+        <h2>Camera stream</h2>
+        <div class="camera">
+        </div>
+        <div class="control-panel">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Controls</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Capturing</h4>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" ng-click="capturing = true;" ng-class="{'btn-selected': capturing}" ng-disabled="!serverOnline">On</button>
+                        <button type="button" class="btn btn-default" ng-click="capturing = false;" ng-class="{'btn-selected': !capturing}" ng-disabled="!serverOnline">Off</button>
+                    </div>
+                    <h4>Directions</h4>
+                    <table style="width: 300px; text-align: center;">
+                        <tr>
+                            <td></td>
+                            <td>Forward</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Left</td>
+                            <td></td>
+                            <td>Right</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Down</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

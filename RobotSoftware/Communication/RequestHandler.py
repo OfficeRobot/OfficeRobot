@@ -19,7 +19,7 @@ def stopContServo():
 
 def resetRotServo():
     #print("Stop the continous servo")
-    Servo_Control.setRotServo(1, 90)
+    Servo_Control.setRotServo(0, 90)
 
 
 #Create custom HTTPRequestHandler class
@@ -27,7 +27,8 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
     #handle GET command
     def do_GET(self):
         try:
-            path = self.path.replace("/", "")
+            self.send_header('Content-type', 'application/x-javascript')
+            path = self.path.replace("/", "").replace("?", "")
             params = path.split('&')
             if params.__len__() <= 1:
                 self.send_error(400, 'Wrong or missing parameters')
@@ -38,6 +39,9 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
             for i in range(0, params.__len__()):
                 key = params[i].split('=')[0].lower()
                 value = params[i].split('=')[1].lower()
+                if key == 'check':
+                    self.send_response(200, "true")
+                    return
                 if key == 'action':
                     action = value
                 if key == 'direction':
@@ -56,30 +60,18 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
                 if action == Actions.Move:
                     if direction == Directions.Forward:
                         Servo_Control.setContServo(1, 0, speed)
-                        r = Timer(0.3, stopContServo, ())
-                        r.start()
-                        print("Moving forward with speed %s" % str(speed))
                     else:
                         Servo_Control.setContServo(1, 0, speed)
-                        r = Timer(0.3, stopContServo, ())
-                        r.start()
-                        print("Moving backward with speed %s" % str(speed))
                 if action == Actions.Turn:
                     if direction == Directions.Left:
                         Servo_Control.setRotServo(0, 90 - angle)
-                        r = Timer(0.3, resetRotServo(), ())
-                        r.start()
-                        print("Turning left with angle %s" % str(angle))
                     else:
                         Servo_Control.setRotServo(0, 90 + angle)
-                        r = Timer(0.3, resetRotServo(), ())
-                        r.start()
-                        print("Turning right with angle %s" % str(angle))
                 #send code 200 response
                 self.send_response(200)
 
             #send header first
-            self.send_header('Content-type', 'text-html')
+            self.send_header('Content-type', 'application/x-javascript')
             self.end_headers()
             return
         except IOError:
