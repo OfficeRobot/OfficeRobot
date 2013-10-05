@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="22" selection-start="464" selection-end="464" vertical-scroll-proportion="0.20395201" vertical-offset="0" max-vertical-offset="1417">
+            <state line="20" column="15" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding>
                 <element signature="e#41#102#0" expanded="true" />
               </folding>
@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestHandler.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RequestHandler.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RequestHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+            <state line="74" column="38" selection-start="2766" selection-end="2766" vertical-scroll-proportion="0.8440367" vertical-offset="62" max-vertical-offset="1547">
               <folding>
                 <element signature="e#25#86#0" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/RequestHandler.py" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/RequestHandler.py" />
       </list>
     </option>
   </component>
@@ -366,20 +366,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestHandler.py">
+    <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+        <state line="20" column="15" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding>
-            <element signature="e#25#86#0" expanded="true" />
+            <element signature="e#41#102#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server.py">
+    <entry file="file://$PROJECT_DIR$/RequestHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="464" selection-end="464" vertical-scroll-proportion="0.20395201" vertical-offset="0" max-vertical-offset="1417">
+        <state line="74" column="38" selection-start="2766" selection-end="2766" vertical-scroll-proportion="0.8440367" vertical-offset="62" max-vertical-offset="1547">
           <folding>
-            <element signature="e#41#102#0" expanded="true" />
+            <element signature="e#25#86#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -17,6 +17,11 @@ def stopContServo():
     Servo_Control.setContServo(1, 0, 0)
 
 
+def resetRotServo():
+    #print("Stop the continous servo")
+    Servo_Control.setRotServo(1, 90)
+
+
 #Create custom HTTPRequestHandler class
 class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
     #handle GET command
@@ -55,16 +60,20 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
                         r.start()
                         print("Moving forward with speed %s" % str(speed))
                     else:
-                        #setContServo(1,0,speed)
+                        Servo_Control.setContServo(1, 0, speed)
                         r = Timer(0.3, stopContServo, ())
                         r.start()
                         print("Moving backward with speed %s" % str(speed))
                 if action == Actions.Turn:
                     if direction == Directions.Left:
-                        #setRotServo(0, 90-angle)
+                        Servo_Control.setRotServo(0, 90 - angle)
+                        r = Timer(0.3, resetRotServo(), ())
+                        r.start()
                         print("Turning left with angle %s" % str(angle))
                     else:
-                        #setRotServo(0, 90+angle)
+                        Servo_Control.setRotServo(0, 90 + angle)
+                        r = Timer(0.3, resetRotServo(), ())
+                        r.start()
                         print("Turning right with angle %s" % str(angle))
                 #send code 200 response
                 self.send_response(200)
