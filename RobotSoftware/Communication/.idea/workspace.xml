@@ -26,7 +26,7 @@
       <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.22794637" vertical-offset="0" max-vertical-offset="1417">
+            <state line="17" column="22" selection-start="464" selection-end="464" vertical-scroll-proportion="0.20395201" vertical-offset="0" max-vertical-offset="1417">
               <folding>
                 <element signature="e#41#102#0" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/RequestHandler.py" />
+        <option value="$PROJECT_DIR$/Server.py" />
       </list>
     </option>
   </component>
@@ -377,7 +377,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.22794637" vertical-offset="0" max-vertical-offset="1417">
+        <state line="17" column="22" selection-start="464" selection-end="464" vertical-scroll-proportion="0.20395201" vertical-offset="0" max-vertical-offset="1417">
           <folding>
             <element signature="e#41#102#0" expanded="true" />
           </folding>

@@ -12,7 +12,7 @@ def run():
 
     #ip and port of servr
     #by default http server port is 80
-    ip = socket.getfqdn()
+    ip = socket.gethostname()
     server_address = (ip, 80)
     httpd = HTTPServer(server_address, RobotHTTPRequestHandler)
     print('http server is running on %s ...' % ip)
