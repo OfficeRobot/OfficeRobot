@@ -26,7 +26,7 @@
       <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="28" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+            <state line="23" column="28" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="RequestHandler.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RequestHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="28" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.34871796" vertical-offset="0" max-vertical-offset="1755">
+            <state line="61" column="63" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.57150996" vertical-offset="0" max-vertical-offset="1755">
               <folding />
             </state>
           </provider>
@@ -53,8 +53,8 @@
       <list>
         <option value="$PROJECT_DIR$/Client/RobotControl.html" />
         <option value="$PROJECT_DIR$/Client/Content/Styles/Site.css" />
-        <option value="$PROJECT_DIR$/RequestHandler.py" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/RequestHandler.py" />
       </list>
     </option>
   </component>
@@ -346,14 +346,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+        <state line="23" column="28" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RequestHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="28" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.34871796" vertical-offset="0" max-vertical-offset="1755">
+        <state line="61" column="63" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.57150996" vertical-offset="0" max-vertical-offset="1755">
           <folding />
         </state>
       </provider>
