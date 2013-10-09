@@ -1,4 +1,5 @@
 .control-container{ overflow: hidden; }
-.camera{ width: 500px;height: 500px; background: #737373; float: left; }
-.control-panel{ padding-left: 520px; }
+.camera{ width: 600px; background: #737373; float: left; }
+.control-panel{ padding-left: 620px; }
 .btn-selected{ color:#333;background-color:#ebebeb;border-color:#adadad}
+.direction { color: #DF6B6B }

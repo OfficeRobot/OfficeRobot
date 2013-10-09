@@ -25,8 +25,7 @@
         <div class="alert alert-info" ng-show="serverOnline" >The robot is online! The address is {{serverAddress}}</div>
         <div class="alert alert-danger" ng-hide="serverOnline">The robot is offline!</div>
         <h2>Camera stream</h2>
-        <div class="camera">
-        </div>
+        <img class="camera" src={{serverAddress+':8080?action=stream'}} />
         <div class="control-panel">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -42,17 +41,17 @@
                     <table style="width: 300px; text-align: center;">
                         <tr>
                             <td></td>
-                            <td>Forward</td>
+                            <td ng-class="{'direction': direction == 'up'}">Forward</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Left</td>
+                            <td ng-class="{'direction': direction == 'left'}">Left</td>
                             <td></td>
-                            <td>Right</td>
+                            <td ng-class="{'direction': direction == 'right'}">Right</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Down</td>
+                            <td ng-class="{'direction': direction == 'down'}">Backward</td>
                             <td></td>
                         </tr>
                     </table>

@@ -23,17 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RobotControl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RobotControl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="62" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.1761658" vertical-offset="0" max-vertical-offset="1737">
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bootstrap.min.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/Styles/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,10 +35,8 @@
       <file leaf-file-name="Control.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/Scripts/Control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="30" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-              <folding>
-                <element signature="e#0#47#0" expanded="false" />
-              </folding>
+            <state line="55" column="60" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,9 +44,10 @@
       <file leaf-file-name="Services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/Scripts/Services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="39" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+            <state line="65" column="85" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
+                <element signature="e#279#984#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,7 +56,16 @@
       <file leaf-file-name="Site.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/Styles/Site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="4" column="29" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotControl.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RobotControl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="68" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.2642487" vertical-offset="0" max-vertical-offset="1737">
               <folding />
             </state>
           </provider>
@@ -84,9 +81,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Content/Scripts/Services.js" />
         <option value="$PROJECT_DIR$/Content/Styles/Site.css" />
         <option value="$PROJECT_DIR$/RobotControl.html" />
+        <option value="$PROJECT_DIR$/Content/Scripts/Services.js" />
         <option value="$PROJECT_DIR$/Content/Scripts/Control.js" />
       </list>
     </option>
@@ -202,18 +199,10 @@
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -222,6 +211,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -264,14 +261,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="6" width="1216" height="1936" extended-state="1" />
+    <frame x="1912" y="6" width="1216" height="1936" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -298,6 +295,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Content/Styles/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Scripts/Control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="48" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Scripts/Services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="38" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+            <element signature="e#279#984#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Styles/Site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RobotControl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="68" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Content/Scripts/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2805">
@@ -314,35 +349,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/Styles/Site.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+        <state line="4" column="29" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Scripts/Control.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="30" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/Scripts/Services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="39" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+        <state line="65" column="85" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
           <folding>
             <element signature="e#0#47#0" expanded="false" />
+            <element signature="e#279#984#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Scripts/Control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="60" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RobotControl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="62" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.1761658" vertical-offset="0" max-vertical-offset="1737">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="27" column="68" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.2642487" vertical-offset="0" max-vertical-offset="1737">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -28,7 +28,7 @@ angular.module('robot.service', [], function ($provide) {
                 $.ajax({
                     url: serverAddress,
                     dataType: 'jsonp',
-                    data: { Action: 'move', Direction:'forward', Speed:speed },
+                    data: { Action: 'move', Direction:'forward', Speed:speed, Channel:0 },
                     success: function (result) {
                         $timeout(function () { deferred.resolve(true); });
                     },
@@ -46,7 +46,7 @@ angular.module('robot.service', [], function ($provide) {
                 $.ajax({
                     url: serverAddress,
                     dataType: 'jsonp',
-                    data: { Action: 'move', Direction:'backward', Speed:speed },
+                    data: { Action: 'move', Direction:'backward', Speed:speed, Channel:0 },
                     success: function (result) {
                         $timeout(function () { deferred.resolve(true); });
                     },
@@ -58,12 +58,12 @@ angular.module('robot.service', [], function ($provide) {
                     }
                 });
             },
-            turnLeft: function (serverAddress, angle) {
+            turnLeft: function (serverAddress, angle, channel) {
                 var deferred = $q.defer();
                 $.ajax({
                     url: serverAddress,
                     dataType: 'jsonp',
-                    data: { Action: 'turn', Direction:'left', Angle:angle },
+                    data: { Action: 'turn', Direction:'left', Angle:angle, Channel:channel },
                     success: function (result) {
                         $timeout(function () { deferred.resolve(true); });
                     },
@@ -76,12 +76,12 @@ angular.module('robot.service', [], function ($provide) {
                 });
                 return deferred.promise;
             },
-            turnRight: function (serverAddress, angle) {
+            turnRight: function (serverAddress, angle, channel) {
                 var deferred = $q.defer();
                 $.ajax({
                     url: serverAddress,
                     dataType: 'jsonp',
-                    data: { Action: 'turn', Direction:'right', Angle:angle },
+                    data: { Action: 'turn', Direction:'right', Angle:angle, Channel:channel },
                     success: function (result) {
                         $timeout(function () { deferred.resolve(true); });
                     },

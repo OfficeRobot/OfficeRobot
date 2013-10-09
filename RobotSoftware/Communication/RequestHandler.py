@@ -36,6 +36,7 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
             direction = ''
             angle = 0
             speed = 50
+            channel = 0
             for i in range(0, params.__len__()):
                 key = params[i].split('=')[0].lower()
                 value = params[i].split('=')[1].lower()
@@ -50,6 +51,8 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
                     angle = int(value)
                 if key == 'speed':
                     speed = int(value)
+                if key == 'channel':
+                    channel = int(value)
             if angle > 90:
                 angle = 90
             if angle < 0:
@@ -59,14 +62,14 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
             else:
                 if action == Actions.Move:
                     if direction == Directions.Forward:
-                        Servo_Control.setContServo(1, 0, speed)
+                        Servo_Control.setContServo(channel, 0, speed)
                     else:
-                        Servo_Control.setContServo(1, 1, speed)
+                        Servo_Control.setContServo(channel, 1, speed)
                 if action == Actions.Turn:
                     if direction == Directions.Left:
-                        Servo_Control.setRotServo(0, 90 - angle)
+                        Servo_Control.setRotServo(channel, 90 - angle)
                     else:
-                        Servo_Control.setRotServo(0, 90 + angle)
+                        Servo_Control.setRotServo(channel, 90 + angle)
                 #send code 200 response
                 self.send_response(200)
 
