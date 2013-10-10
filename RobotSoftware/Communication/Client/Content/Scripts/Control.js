@@ -28,48 +28,68 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             //UP
             if (event.keyCode == 38) {
                 $scope.direction = directions.up;
-                $service.moveForward($scope.serverAddress, 100);
+                //Mirror
+                $service.moveForward($scope.serverAddress, 100, 15);
+                $service.moveBackward($scope.serverAddress, 100, 14);
             }
             //DOWN
             if (event.keyCode == 40) {
                 $scope.direction = directions.down;
-                $service.moveBackward($scope.serverAddress, 100);
+                $service.moveForward($scope.serverAddress, 100, 14);
+                //Mirror
+                $service.moveBackward($scope.serverAddress, 100, 15);
             }
             //LEFT
             if (event.keyCode == 37) {
                 $scope.direction = directions.left;
-                $service.turnLeft($scope.serverAddress, 90, 1);
+                $service.moveBackward($scope.serverAddress, 100, 14);
+                //Mirror
+                $service.moveBackward($scope.serverAddress, 100, 15);
             }
             //RIGHT
             if (event.keyCode == 39) {
                 $scope.direction = directions.right;
-                $service.turnRight($scope.serverAddress, 90, 1);
+                $service.moveForward($scope.serverAddress, 100, 14);
+                //Mirror
+                $service.moveForward($scope.serverAddress, 100, 15);
             }
             //LEFT CAMERA 'Q'
             if (event.keyCode == 81) {
                 $scope.direction = directions.left;
-                $service.turnLeft($scope.serverAddress, 10, 2);
+                $service.turnLeft($scope.serverAddress, 50, 3);
             }
             //RIGHT CAMERA 'W'
             if (event.keyCode == 87) {
                 $scope.direction = directions.right;
-                $service.turnRight($scope.serverAddress, 10, 2);
+                $service.turnRight($scope.serverAddress, 50, 3);
             }
         };
 
         $scope.keyup = function (event) {
             //UP
             if (event.keyCode == 38)
-                $service.moveForward($scope.serverAddress, 0);
+            {
+                $service.moveForward($scope.serverAddress, 0, 15);
+                $service.moveBackward($scope.serverAddress, 0, 14)
+            }
             //DOWN
             if (event.keyCode == 40)
-                $service.moveBackward($scope.serverAddress, 0);
+            {
+                $service.moveForward($scope.serverAddress, 0, 15);
+                $service.moveBackward($scope.serverAddress, 0, 14);
+            }
             //LEFT
             if (event.keyCode == 37)
-                $service.turnLeft($scope.serverAddress, 0, 1);
+            {
+                $service.moveForward($scope.serverAddress, 0, 15);
+                $service.moveBackward($scope.serverAddress, 0, 14);
+            }
             //RIGHT
             if (event.keyCode == 39)
-                $service.turnRight($scope.serverAddress, 0, 1);
+            {
+                $service.moveForward($scope.serverAddress, 0, 15);
+                $service.moveBackward($scope.serverAddress, 0, 14);
+            }
             $scope.direction = '';
         };
     }]);

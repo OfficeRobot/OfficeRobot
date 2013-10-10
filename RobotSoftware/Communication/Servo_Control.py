@@ -14,7 +14,7 @@ pwm = PWM(0x40, debug=True)
 servoMin = 100 # Min pulse length out of 4096
 servoMax = 700 # Max pulse length out of 4096
 
-def setServoPulse(channel, low,high):
+def setServoPulse(channel, low, high):
   print "High: %d" % high
   pulseLength = 1000000 # 1,000,000 us per second
   pulseLength /= 60
@@ -24,14 +24,14 @@ def setServoPulse(channel, low,high):
   print "High pulse: %d" % high
   pwm.setPWM(channel, int(low), int(high))
 
-pwm.setPWMFreq(60) # Set frequency to 60 Hz
+pwm.setPWMFreq(60)  # Set frequency to 60 Hz
 
 #channel is the channel number on control panel
 #isCw is true if the direction is clockwise
 #speed is a percentage value
 def setContServo(channel, isCw, speed):
   minPulse = 1.5
-  stopPulse = 1.61
+  stopPulse = 1.6
   maxPulse = 1.75
 
   pulse=0
@@ -53,5 +53,3 @@ def setRotServo(channel, angle):
   print "Speed: %d" % angleRange
   pulse= minPulse + (angle / (180/angleRange))
   setServoPulse(channel, 0, pulse)
-
-

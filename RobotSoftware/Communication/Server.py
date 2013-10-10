@@ -22,8 +22,8 @@ def run():
     print('http server is running on %s ...' % ip)
     httpd.serve_forever()
 
-    Servo_Control.setContServo(1, 0, 0)
-    Servo_Control.setRotServo(0, 90)
+    #Servo_Control.setContServo(1, 0, 0)
+    #Servo_Control.setRotServo(0, 90)
 
 if __name__ == '__main__':
     run()

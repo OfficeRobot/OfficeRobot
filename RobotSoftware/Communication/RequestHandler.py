@@ -62,9 +62,11 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
             else:
                 if action == Actions.Move:
                     if direction == Directions.Forward:
-                        Servo_Control.setContServo(channel, 0, speed)
+                        Servo_Control.setContServo(15, 0, speed)
+                        Servo_Control.setContServo(14, 1, speed)
                     else:
-                        Servo_Control.setContServo(channel, 1, speed)
+                        Servo_Control.setContServo(15, 1, speed)
+                        Servo_Control.setContServo(14, 0, speed)
                 if action == Actions.Turn:
                     if direction == Directions.Left:
                         Servo_Control.setRotServo(channel, 90 - angle)

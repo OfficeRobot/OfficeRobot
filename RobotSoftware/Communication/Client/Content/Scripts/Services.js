@@ -23,12 +23,12 @@ angular.module('robot.service', [], function ($provide) {
                 });
                 return deferred.promise;
             },
-            moveForward: function (serverAddress, speed) {
+            moveForward: function (serverAddress, speed, channel) {
                 var deferred = $q.defer();
                 $.ajax({
                     url: serverAddress,
                     dataType: 'jsonp',
-                    data: { Action: 'move', Direction:'forward', Speed:speed, Channel:0 },
+                    data: { Action: 'move', Direction:'forward', Speed:speed, Channel:channel },
                     success: function (result) {
                         $timeout(function () { deferred.resolve(true); });
                     },
@@ -41,12 +41,12 @@ angular.module('robot.service', [], function ($provide) {
                 });
                 return deferred.promise;
             },
-            moveBackward: function (serverAddress, speed) {
+            moveBackward: function (serverAddress, speed, channel) {
                 var deferred = $q.defer();
                 $.ajax({
                     url: serverAddress,
                     dataType: 'jsonp',
-                    data: { Action: 'move', Direction:'backward', Speed:speed, Channel:0 },
+                    data: { Action: 'move', Direction:'backward', Speed:speed, Channel:channel },
                     success: function (result) {
                         $timeout(function () { deferred.resolve(true); });
                     },
