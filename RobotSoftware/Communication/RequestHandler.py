@@ -69,11 +69,11 @@ class RobotHTTPRequestHandler(BaseHTTPRequestHandler):
                         Servo_Control.setContServo(14, 0, speed)
                 if action == Actions.Turn:
                     if direction == Directions.Left:
-                        Servo_Control.setContServo(15, 0, speed)
+                        Servo_Control.setContServo(15, 1, speed)
                         Servo_Control.setContServo(14, 0, speed)
                     else:
                         Servo_Control.setContServo(15, 1, speed)
-                        Servo_Control.setContServo(14, 1, speed)
+                        Servo_Control.setContServo(14, 0, speed)
                 #send code 200 response
                 self.send_response(200)
 
