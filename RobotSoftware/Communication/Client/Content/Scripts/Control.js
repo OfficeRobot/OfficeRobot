@@ -29,15 +29,12 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             if (event.keyCode == 38) {
                 $scope.direction = directions.up;
                 //Mirror
-                $service.moveForward($scope.serverAddress, 100, 15);
-                $service.moveBackward($scope.serverAddress, 100, 14);
+                $service.moveForward($scope.serverAddress, 100);
             }
             //DOWN
             if (event.keyCode == 40) {
                 $scope.direction = directions.down;
-                $service.moveForward($scope.serverAddress, 100, 14);
-                //Mirror
-                $service.moveBackward($scope.serverAddress, 100, 15);
+                $service.moveBackward($scope.serverAddress, 100);
             }
             //LEFT
             if (event.keyCode == 37) {
@@ -69,14 +66,12 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             //UP
             if (event.keyCode == 38)
             {
-                $service.moveForward($scope.serverAddress, 0, 15);
-                $service.moveBackward($scope.serverAddress, 0, 14)
+                $service.moveForward($scope.serverAddress, 0);
             }
             //DOWN
             if (event.keyCode == 40)
             {
-                $service.moveForward($scope.serverAddress, 0, 15);
-                $service.moveBackward($scope.serverAddress, 0, 14);
+                $service.moveBackward($scope.serverAddress, 0);
             }
             //LEFT
             if (event.keyCode == 37)
