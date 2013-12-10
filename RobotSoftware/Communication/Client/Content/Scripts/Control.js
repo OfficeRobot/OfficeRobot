@@ -11,7 +11,7 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
         //Address of the PI with port
         $scope.serverAddress = "http://10.14.139.201";
 
-        $scope.$service= $service;
+        $scope.$service = $service;
 
         $scope.serverOnline = false;
         $scope.capturing = true;
@@ -25,27 +25,25 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             $(window).keyup($scope.keyup);
         };
 
-        $scope.moveForward = function()
-        {
+        var moving = false;
+
+        $scope.moveForward = function () {
             $scope.direction = directions.up;
             //Mirror
             $service.moveForward($scope.serverAddress, 100);
         };
 
-        $scope.moveBackward = function()
-        {
+        $scope.moveBackward = function () {
             $scope.direction = directions.down;
             $service.moveBackward($scope.serverAddress, 100);
         };
 
-        $scope.turnLeft = function()
-        {
+        $scope.turnLeft = function () {
             $scope.direction = directions.left;
             $service.turnLeft($scope.serverAddress, 50, 3);
         };
 
-        $scope.turnRight = function()
-        {
+        $scope.turnRight = function () {
             $scope.direction = directions.right;
             $service.turnRight($scope.serverAddress, 50, 3);
         };
@@ -56,12 +54,16 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             if (event.keyCode == 38) {
                 $scope.direction = directions.up;
                 //Mirror
-                $service.moveForward($scope.serverAddress, 100);
+                if (!moving)
+                    $service.moveForward($scope.serverAddress, 100);
+                moving = true;
             }
             //DOWN
             if (event.keyCode == 40) {
                 $scope.direction = directions.down;
-                $service.moveBackward($scope.serverAddress, 100);
+                if (!moving)
+                    $service.moveBackward($scope.serverAddress, 100);
+                moving = true;
             }
             //LEFT
             if (event.keyCode == 37) {
@@ -87,23 +89,21 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
 
         $scope.keyup = function (event) {
             //UP
-            if (event.keyCode == 38)
-            {
+            if (event.keyCode == 38) {
+                moving = false;
                 $service.moveForward($scope.serverAddress, 0);
             }
             //DOWN
-            if (event.keyCode == 40)
-            {
+            if (event.keyCode == 40) {
                 $service.moveBackward($scope.serverAddress, 0);
+                moving = false;
             }
             //LEFT
-            if (event.keyCode == 37)
-            {
+            if (event.keyCode == 37) {
                 $service.moveForward($scope.serverAddress, 0);
             }
             //RIGHT
-            if (event.keyCode == 39)
-            {
+            if (event.keyCode == 39) {
                 $service.moveForward($scope.serverAddress, 0);
             }
             $scope.direction = '';
