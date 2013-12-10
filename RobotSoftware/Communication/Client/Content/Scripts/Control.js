@@ -9,7 +9,7 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
         var directions = { up: 'up', down: 'down', left: 'left', right: 'right' }
         //
         //Address of the PI with port
-        $scope.serverAddress = "http://10.14.139.201";
+        $scope.serverAddress = "http://192.168.14.175";
 
         $scope.serverOnline = false;
         $scope.capturing = true;
