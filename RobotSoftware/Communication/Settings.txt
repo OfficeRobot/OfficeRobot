@@ -1,0 +1,22 @@
+Setup i2c
+apt-get install python-smbus
+sudo nano /etc/modules
+    add:
+	
+
+Setup camera stream
+apt-get install libv4l-dev
+apt-get install libjpeg8-dev
+apt-get install imagemagick
+wget http://lilnetwork.com/download/raspberrypi/mjpg-streamer.tar.gz
+tar xvzf mjpg-streamer.tar.gz
+
+Start the camera stream
+cd mjpg-streamer/mjpg-streamer
+LD_LIBRARY_PATH=./ ./mjpg_streamer -i "input_uvc.so -d /dev/video0  -r 1024x768 -f 100" -o "output_http.so -p 8080 -w /var/www/mjpg_streamer"
+
+Start the server for controlling
+sudo python OfficeRobot/RobotSoftware/Communication/Server.py
+
+Start sound streaming
+sudo avconv -f alsa -ac 1 -i hw:1,0 -acodec pcm_s16le -ar 22050 -f rtp rtp://10.14.139.201:1234

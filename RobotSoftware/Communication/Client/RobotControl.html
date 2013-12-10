@@ -22,6 +22,7 @@
         <h1>Web Control for Dealogic Robot</h1>
     </div>
     <div class="control-container">
+        <input class="form-control" ng-model="serverAddress">
         <div class="alert alert-info" ng-show="serverOnline" >The robot is online! The address is {{serverAddress}}</div>
         <div class="alert alert-danger" ng-hide="serverOnline">The robot is offline!</div>
         <h2>Camera stream</h2>
@@ -41,17 +42,17 @@
                     <table style="width: 300px; text-align: center;">
                         <tr>
                             <td></td>
-                            <td ng-class="{'direction': direction == 'up'}">Forward</td>
+                            <td ng-click="moveForward()" ng-class="{'direction': direction == 'up'}">Forward</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td ng-class="{'direction': direction == 'left'}">Left</td>
+                            <td ng-click="turnLeft()" ng-class="{'direction': direction == 'left'}">Left</td>
                             <td></td>
-                            <td ng-class="{'direction': direction == 'right'}">Right</td>
+                            <td ng-click="turnRight()" ng-class="{'direction': direction == 'right'}">Right</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td ng-class="{'direction': direction == 'down'}">Backward</td>
+                            <td ng-click="moveBackward()" ng-class="{'direction': direction == 'down'}">Backward</td>
                             <td></td>
                         </tr>
                     </table>
