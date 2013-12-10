@@ -68,12 +68,16 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             //LEFT
             if (event.keyCode == 37) {
                 $scope.direction = directions.left;
-                $service.turnLeft($scope.serverAddress, 50, 3);
+                if (moving)
+                    $service.turnLeft($scope.serverAddress, 50, 3);
+                moving = true;
             }
             //RIGHT
             if (event.keyCode == 39) {
                 $scope.direction = directions.right;
-                $service.turnRight($scope.serverAddress, 50, 3);
+                if (moving)
+                    $service.turnRight($scope.serverAddress, 50, 3);
+                moving = true;
             }
             //LEFT CAMERA 'Q'
             if (event.keyCode == 81) {
@@ -101,10 +105,12 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             //LEFT
             if (event.keyCode == 37) {
                 $service.moveForward($scope.serverAddress, 0);
+                moving = false;
             }
             //RIGHT
             if (event.keyCode == 39) {
                 $service.moveForward($scope.serverAddress, 0);
+                moving = false;
             }
             $scope.direction = '';
         };
