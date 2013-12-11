@@ -31,7 +31,7 @@ pwm.setPWMFreq(60)  # Set frequency to 60 Hz
 #speed is a percentage value
 def setContServo(channel, isCw, speed):
   minPulse = 1.5
-  stopPulse = 1.6
+  stopPulse = 1.595
   maxPulse = 1.75
 
   pulse=0

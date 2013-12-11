@@ -68,14 +68,14 @@ AppModule.controller('MainCtrl', ['$scope', 'controlService',
             //LEFT
             if (event.keyCode == 37) {
                 $scope.direction = directions.left;
-                if (moving)
+                if (!moving)
                     $service.turnLeft($scope.serverAddress, 50, 3);
                 moving = true;
             }
             //RIGHT
             if (event.keyCode == 39) {
                 $scope.direction = directions.right;
-                if (moving)
+                if (!moving)
                     $service.turnRight($scope.serverAddress, 50, 3);
                 moving = true;
             }
