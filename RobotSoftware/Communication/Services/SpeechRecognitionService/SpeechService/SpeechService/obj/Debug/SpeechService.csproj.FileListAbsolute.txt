@@ -1,0 +1,6 @@
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechService\obj\Debug\SpeechService.csprojResolveAssemblyReference.cache
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechService\bin\Debug\SpeechService.dll.config
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechService\bin\Debug\SpeechService.dll
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechService\bin\Debug\SpeechService.pdb
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechService\obj\Debug\SpeechService.dll
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechService\obj\Debug\SpeechService.pdb
