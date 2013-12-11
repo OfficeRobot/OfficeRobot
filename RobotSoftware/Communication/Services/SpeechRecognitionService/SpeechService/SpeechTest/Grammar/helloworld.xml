@@ -1,0 +1,8 @@
+<grammar version="1.0" sapi:alphabet="x-microsoft-ups" xml:lang="en-us" root="Greeting" tag-format="semantics-ms/1.0" xmlns="http://www.w3.org/2001/06/grammar" xmlns:sapi="http://schemas.microsoft.com/Speech/2002/06/SRGSExtensions">
+     <rule id="Greeting" scope="public">
+          <one-of>
+	        <!-- You can add multiple phrases here to recognize for this specific rule -->
+               <item>Hello world</item>
+          </one-of>
+     </rule>
+</grammar>

@@ -1,0 +1,7 @@
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\obj\Debug\SpeechTest.csprojResolveAssemblyReference.cache
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\bin\Debug\SpeechTest.dll
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\bin\Debug\SpeechTest.pdb
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\bin\Debug\SpeechService.dll
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\bin\Debug\SpeechService.pdb
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\obj\Debug\SpeechTest.dll
+C:\Users\gmeszaros\Documents\GitHub\OfficeRobot\RobotSoftware\Communication\Services\SpeechRecognitionService\SpeechService\SpeechTest\obj\Debug\SpeechTest.pdb
