@@ -13,8 +13,24 @@
     <script type="text/javascript" src="Content/Scripts/angular.min.js"></script>
     <script type="text/javascript" src="Content/Scripts/moment.min.js"></script>
 
+    <script type="text/javascript" src="Content/Scripts/Speech.js"></script>
     <script type="text/javascript" src="Content/Scripts/Control.js"></script>
+    <script type="text/javascript" src="Content/Scripts/Directives.js"></script>
     <script type="text/javascript" src="Content/Scripts/Services.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("language", "1");  // Load the translator JS library.
+
+        // These will most likely be set in a UI.
+        var fromLang = "en";
+        var toLang = "es";
+
+
+
+        function speak(output, lang) {
+            // (Use <audio> or a TTS API to speak output in lang)
+        }
+    </script>
 </head>
 <body ng-app="robot" ng-controller="MainCtrl" ng-init="init()">
 <div class="jumbotron">
@@ -22,17 +38,20 @@
         <h1>Web Control for Dealogic Robot</h1>
     </div>
     <div class="control-container">
-        <input class="form-control" ng-model="serverAddress">
         <div class="alert alert-info" ng-show="serverOnline" >The robot is online! The address is {{serverAddress}}</div>
         <div class="alert alert-danger" ng-hide="serverOnline">The robot is offline!</div>
         <h2>Camera stream</h2>
-        <img class="camera" src={{serverAddress+':8080?action=stream'}} />
+        <!--<img class="camera" src={{serverAddress+':8080?action=stream'}} />-->
         <div class="control-panel">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Controls</h3>
                 </div>
                 <div class="panel-body">
+                    <h4>Voice Control</h4>
+                    <form>
+                        <input class="speech" placeholder="Recognized Command" speech x-webkit-speech speech-change="handleSpeechInput">
+                    </form>
                     <h4>Capturing</h4>
                     <div class="btn-group">
                         <button type="button" class="btn btn-default" ng-click="capturing = true;" ng-class="{'btn-selected': capturing}" ng-disabled="!serverOnline">On</button>
@@ -56,6 +75,15 @@
                             <td></td>
                         </tr>
                     </table>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Settings</h3>
+                </div>
+                <div class="panel-body">
+                    <h4>Server Address</h4>
+                    <input class="form-control" ng-model="serverAddress">
                 </div>
             </div>
         </div>
